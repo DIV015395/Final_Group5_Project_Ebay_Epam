@@ -30,11 +30,20 @@ public class Address_change
     @FindBy(xpath = "//a[normalize-space()='Personal information']")
     public WebElement personalinfor;
 
-    @FindBy(xpath = "//span[normalize-space()='Addresses']")
+    @FindBy(xpath = "//a[normalize-space()='Addresses']")
     public WebElement Addresssses;
 
     @FindBy(xpath = "//a[@aria-label='Edit Shipping address opens in new window or tab.']")
     public WebElement shipping;
+
+    @FindBy(xpath = "//div[@class='bottomrow']")
+    public WebElement edits;
+
+    @FindBy (xpath = "//input[@id='s0-0-17-6-name-field-name-field']")
+    public WebElement namess;
+
+    @FindBy (xpath = "//input[@id='s0-0-17-6-address-autocomplete-field-addressLine1-field-addressLine1-field']")
+    public WebElement adde;
 
 
 
@@ -57,17 +66,22 @@ public class Address_change
 
     }
     public void addresssss() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(15000);
         userss.click();
-        Thread.sleep(3000);
+        Thread.sleep(15000);
         accountsett.click();
-        Thread.sleep(3000);
+        Thread.sleep(15000);
         personalinfor.click();
-        Thread.sleep(40000);
+        Thread.sleep(15000);
         Addresssses.click();
-        Thread.sleep(3000);
+        Thread.sleep(15000);
         shipping.click();
-        Thread.sleep(3000);
+        Thread.sleep(15000);
+        edits.click();
+        Thread.sleep(15000);
+        namess.sendKeys("Lovely");
+        Thread.sleep(10000);
+        adde.sendKeys("Lpu phagwara BH3 Hostels");
     }
 
 }

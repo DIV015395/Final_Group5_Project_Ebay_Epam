@@ -37,7 +37,6 @@ public class Username_Change
     public WebElement editsbox;
 
 
-
     public Username_Change(WebDriver driver)
     {
         this.driver = driver;
@@ -47,26 +46,29 @@ public class Username_Change
     public void login(String username, String password) throws InterruptedException {
         Thread.sleep(20000);
         usernameInput.sendKeys(username);
-        Thread.sleep(3000);
+        Thread.sleep(30000);
         loginbutton1.click();
-        Thread.sleep(2000);
+        Thread.sleep(20000);
         passwordInput.sendKeys(password);
-        Thread.sleep(2000);
+        Thread.sleep(20000);
         loginButton2.click();
-        Thread.sleep(2000);
+        Thread.sleep(20000);
 
     }
     public void usernamechange() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(30000);
         userss.click();
-        Thread.sleep(3000);
+        Thread.sleep(30000);
         accountsett.click();
-        Thread.sleep(3000);
+        Thread.sleep(30000);
         personalinfor.click();
         Thread.sleep(20000);
         edits.click();
-        Thread.sleep(3000);
+        Thread.sleep(30000);
         editsbox.click();
-        Thread.sleep(3000);
+        Thread.sleep(30000);
+        editsbox.sendKeys("LPU_123");
+
+
     }
 }

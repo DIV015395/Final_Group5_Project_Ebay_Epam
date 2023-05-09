@@ -18,7 +18,5 @@ public class Remove_cart_Test
         driver.manage().window().maximize();
         Thread.sleep(10000);
         obj.login("sharmaboymanjeet123@gmail.com","qpalzm@1MM");
-
-
     }
 }
