@@ -1,0 +1,6 @@
+
+m
+java:S1104"RMake driver a static final constant or non-public and provide accessors if needed.(ÔèË©úÿÿÿÿ
+a	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÿæƒ;
+q	java:S1160"WRename this field "Addwatchlist" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âƒàåýÿÿÿÿ
