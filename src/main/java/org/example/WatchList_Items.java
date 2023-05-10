@@ -58,22 +58,22 @@ public class WatchList_Items {
     public void login(String username, String password) throws InterruptedException {
         Thread.sleep(20000);
         usernameInput.sendKeys(username);
-        Thread.sleep(3000);
+        Thread.sleep(15000);
         loginbutton1.click();
         Thread.sleep(30000);
         passwordInput.sendKeys(password);
-        Thread.sleep(2000);
+        Thread.sleep(15000);
         loginButton2.click();
-        Thread.sleep(90000);
+        Thread.sleep(15000);
 
     }
 
     public void addcarts() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(15000);
         searchbox.sendKeys("USB-C to USB-C Cable Male Type-C Cable Cord Fast Charger Charging Data Sync");
-        Thread.sleep(2000);
+        Thread.sleep(15000);
         searchbutton.click();
-        Thread.sleep(2000);
+        Thread.sleep(15000);
 
         //Scroll down
         Thread.sleep(20000);
@@ -85,14 +85,14 @@ public class WatchList_Items {
         Thread.sleep(50000);
 
         String currentHandle = driver.getWindowHandle();
-        Thread.sleep(1000);
+        Thread.sleep(15000);
         for (String handle : driver.getWindowHandles()) {
             if (!handle.equals(currentHandle)) {
                 driver.switchTo().window(handle);
                 break;
             }
         }
-        Thread.sleep(1000);
+        Thread.sleep(15000);
         JavascriptExecutor jis=(JavascriptExecutor)driver;
         Thread.sleep(20000);
         jis.executeScript("window.scroll(0,300)");
@@ -104,17 +104,17 @@ public class WatchList_Items {
         Select select = new Select(colorSelect);
         Thread.sleep(10000);
         select.selectByValue("3");
-        Thread.sleep(1000);
+        Thread.sleep(15000);
     }
 
     public void selectLength() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(15000);
         Select lengthSelect = new Select(lengthDropdown);
-        Thread.sleep(2000);
+        Thread.sleep(15000);
         lengthSelect.selectByValue("7");
-        Thread.sleep(9000);
+        Thread.sleep(15000);
         Addwatchlist.click();
-        Thread.sleep(5000);
+        Thread.sleep(15000);
     }
 
 }
