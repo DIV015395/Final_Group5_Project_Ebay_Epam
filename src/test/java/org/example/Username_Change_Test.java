@@ -17,7 +17,7 @@ public class Username_Change_Test {
         driver.get("https://www.ebay.com/signin/");
         driver.manage().window().maximize();
         Thread.sleep(10000);
-        obj.login("sharmaboymanjeet123@gmail.com","qpalzm@1MM");
+        obj.login("vinaychintu1110@gmail.com","VinayChintu@1110");
         Thread.sleep(10000);
         obj.usernamechange();
 
