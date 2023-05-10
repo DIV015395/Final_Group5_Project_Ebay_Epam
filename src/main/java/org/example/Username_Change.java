@@ -36,6 +36,9 @@ public class Username_Change
     @FindBy(xpath = "//input[@id='user_name']")
     public WebElement editsbox;
 
+    @FindBy(xpath = "//button[@id='username_submit_edit_btn']")
+    public WebElement finalclick;
+
 
     public Username_Change(WebDriver driver)
     {
@@ -68,6 +71,8 @@ public class Username_Change
         editsbox.click();
         Thread.sleep(30000);
         editsbox.sendKeys("LPU_123");
+        Thread.sleep(15000);
+        finalclick.click();
 
 
     }
